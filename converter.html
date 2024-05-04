@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div>
+        <button class="botton-regreso" onclick="location.href='menu.html'">🡰</button>
+    </div>
+    <h1>Conversor de Moneda</h1>
+    <p> Bienvenido a nuestra página de conversión de monedas, una herramienta esencial para quienes manejan transacciones en diferentes divisas. 
+        Aquí, podrás convertir de manera rápida y precisa entre pesos argentinos (ARS), dólares estadounidenses (USD) y euros (EUR), 
+        las tres monedas principales con las que trabajamos. Nuestro servicio está diseñado para ofrecer la máxima comodidad a nuestros usuarios, 
+        proporcionando tasas de cambio actualizadas al momento y una interfaz sencilla e intuitiva. Ya sea para negocios, viajes o inversiones, 
+        nuestra plataforma asegura que siempre tengas acceso a la información financiera que necesitas para tomar decisiones informadas. 
+        Confía en nosotros para tus necesidades de conversión de monedas y experimenta la facilidad de manejar tus finanzas globales con solo unos clics. </p>
+
+    
+    <div class="container-padre">
+        <div class="container">
+            <div class="h2-container">
+                <h2>USD - ARS</h2>
+            </div>
+            <div class="h4-container">
+                <h4>1 Dólar Estadounidense es igual a <span id="compraDolarOficial"></span> Pesos Argentinos</h4>
+            </div>
+            <div class="input-container">
+                <label for="dollars">USD:</label>
+                <input type="text" id="dollars" placeholder="0">
+            </div>
+            <div class="input-container">
+                <label for="pesosUSD">ARS:</label>
+                <input type="text" id="pesosUSD" placeholder="0">
+            </div>
+            <button id="convertButtonUSD">Convertir</button>
+        </div>
+
+        <div class="container">
+            <div class="h2-container">
+                <h2>BLU - ARS</h2>
+            </div>
+            <div class="h4-container">
+                <h4>1 Dólar Blue es igual a <span id="compraBlu"></span> Pesos Argentinos</h4>
+            </div>
+            <div class="input-container">
+                <label for="blu">BLU:</label>
+                <input type="text" id="blu" placeholder="0">
+            </div>
+            <div class="input-container">
+                <label for="pesosBLU">ARS:</label>
+                <input type="text" id="pesosBLU" placeholder="0">
+            </div>
+            <button id="convertButtonBLU">Convertir</button>
+        </div>
+
+        <div class="container">
+            <div class="h2-container">
+                <h2>TAR - ARS</h2>
+            </div>
+            <div class="h4-container">
+                <h4>1 Dólar Targeta es igual a <span id="compraTar"></span> Pesos Argentinos</h4>
+            </div>
+            <div class="input-container">
+                <label for="tar">TAR:</label>
+                <input type="text" id="tar" placeholder="0">
+            </div>
+            <div class="input-container">
+                <label for="pesosTAR">ARS:</label>
+                <input type="text" id="pesosTAR" placeholder="0">
+            </div>
+            <button id="convertButtonTAR">Convertir</button>
+        </div>
+
+
+    </div>
+
+    <div class="container-padre">
+        <div class="container">
+            <div class="h2-container">
+                <h2>EUR - ARS</h2>
+            </div>
+            <div class="h4-container"> 
+                <h4>1 Euro es igual a <span id="compraEuro"></span> Pesos Argentinos</h4>
+            </div>
+            <div class="input-container">
+                <label for="euros">EUR:</label>
+                <input type="text" id="euros" placeholder="0">
+            </div>
+            <div class="input-container">
+                <label for="pesosEUR">ARS:</label>
+                <input type="text" id="pesosEUR" placeholder="0">
+            </div>
+            <button id="convertButtonEUR">Convertir</button>
+        </div>
+
+        <div class="container">
+            <div class="h2-container">
+                <h2>BRL - ARS</h2>
+            </div>
+            <div class="h4-container"> 
+                <h4>1 Real Brasileño es igual a <span id="compraBRL"></span> Pesos Argentinos</h4>
+            </div>
+            <div class="input-container">
+                <label for="brl">BRL:</label>
+                <input type="text" id="brl" placeholder="0">
+            </div>
+            <div class="input-container">
+                <label for="pesosBRL">ARS:</label>
+                <input type="text" id="pesosBRL" placeholder="0">
+            </div>
+            <button id="convertButtonBRL">Convertir</button>
+        </div>
+
+        <div class="container">
+            <div class="h2-container">
+                <h2>CAD - ARS</h2>
+            </div>
+            <div class="h4-container"> 
+                <h4>1 Dólar Canadiense es igual a <span id="compraCAD"></span> Pesos Argentinos</h4>
+            </div>
+            <div class="input-container">
+                <label for="cad">CAD:</label>
+                <input type="text" id="cad" placeholder="0">
+            </div>
+            <div class="input-container">
+                <label for="pesosCAD">ARS:</label>
+                <input type="text" id="pesosCAD" placeholder="0">
+            </div>
+            <button id="convertButtonCAD">Convertir</button>
+        </div>
+
+    </div>
+    
+
+    <script src="./converter.js"></script>
+</body>
+</html>
