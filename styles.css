@@ -1,29 +1,28 @@
-/* styles.css */
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Los elementos dentro de .container se disponen en una columna */
     align-items: center;
-    /* Eliminamos grid-template-columns */
-    width: 500px;  /* Define el ancho deseado para el contenedor */
+    width: 200vw; /* Define el ancho deseado para el contenedor */
     gap: 0.7rem;
-    max-width: 500px;  /* Mantén el max-width para pantallas grandes */
+    max-width: 475px; /* Mantén el max-width para pantallas grandes */
     margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
+    margin-bottom: 1.5rem;
 }
-
 
 .container-padre {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Los elementos dentro de .container-padre se disponen en una fila */
+    flex-wrap: wrap; /* Cuando no hay suficiente espacio, los elementos pasan a la siguiente línea */
     justify-content: space-around;
     width: 100%;
     margin-bottom: 30px;
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: auto;
+    flex-basis: 0;
 }
 
 
@@ -60,15 +59,15 @@ p {
 .h2-container{
     display: flex;
     align-items: center;
-    margin-top: -30px;
+    margin-top: -2rem;
 }
 
 
 .h4-container{
     display: flex;
     align-items: center;
-    margin-top: -40px;
-    margin-bottom: -20px;
+    margin-top: -2.5rem;
+    margin-bottom: -1.5rem;
 }
 
 
@@ -78,7 +77,7 @@ p {
 }
 
 label {
-    margin-right: 5px;
+    margin-right: 0.3rem;
 }
 
 input {
@@ -89,6 +88,7 @@ input {
 }
 
 button {
+    position: relative;
     grid-column: span 2;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
